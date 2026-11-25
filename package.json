@@ -1,0 +1,37 @@
+{
+  "name": "agent-deck",
+  "version": "0.1.0",
+  "description": "A colorful terminal deck for watching and steering Claude Code agents",
+  "license": "MIT",
+  "author": "Jas Rajabov",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jasrajabov/agent-deck.git"
+  },
+  "type": "module",
+  "bin": {
+    "agent-deck": "bin/agent-deck.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "start": "tsx src/cli.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ink": "^5.2.1",
+    "react": "^18.3.1",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "typescript": "^5.6.3"
+  }
+}
